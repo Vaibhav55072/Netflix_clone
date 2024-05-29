@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix_clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif
+
+        }
+
+        .container {
+            width: 100%;
+            height: 720px;
+            background-color: black;
+            /* background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/ca15fd28-b624-4852-8bfe-9cdd5c88475d/IN-en-20240520-popsignuptwoweeks-perspective_alpha_website_medium.jpg');*/
+            background-size: cover;
+
+
+
+        }
+
+        background-img {
+            mix-blend-mode: hard-light;
+        }
+
+        .logo {
+            margin-left: 150px;
+
+            position: relative;
+            margin-right: 1200px;
+
+        }
+
+        .logo img {
+            margin-top: 10px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: end;
+            align-items: end;
+            justify-content: end;
+            margin: 20px;
+            gap: 60px;
+
+            margin-left: 1300px;
+            margin-top: -70px;
+            margin-right: 70px;
+
+
+        }
+
+        .Language {
+
+            margin-right: 50px;
+            background-color: #0000;
+            border: none;
+            background: transparent;
+
+        }
+
+        .Language select {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #0000;
+            color: aliceblue;
+            border-radius: 5px;
+        }
+
+        .signIn {
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: red;
+            color: aliceblue;
+            border-radius: 5px;
+            margin-right: 70px;
+            font-weight: 40;
+
+        }
+
+        .signIn:hover {
+            cursor: pointer;
+            background-color: rgb(209, 50, 50);
+        }
+
+        .heading {
+
+            height: 500px;
+            margin-top: 80px;
+
+
+        }
+
+        .poetsen-one-regular {
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .heading h1 {
+            text-align: center;
+            padding-top: 120px;
+            font-size: 40px;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            color: aliceblue;
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+
+        .heading h3 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+            color: aliceblue;
+            font-weight: 100;
+        }
+
+        .heading p {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+            color: aliceblue;
+
+        }
+
+        .email {
+            height: 60px;
+            width: 400px;
+
+            border: none;
+            margin-left: 500px;
+            margin-top: -190px;
+            display: flex;
+            border-radius: 4px;
+
+
+        }
+
+        input,placeholder {
+            text-align: center;
+            font-size: 25px;
+            font-style: oblique;
+        }
+
+        .getstart button {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            margin-left: 910px;
+            margin-top: -60px;
+            display: flex;
+            border-radius: 10px;
+            background-color: red;
+            color: aliceblue;
+            font-style: oblique;
+
+        }
+
+        .getstart button:hover {
+            cursor: pointer;
+            background-color: rgb(209, 50, 50);
+        }
+
+        .box1 {
+            background-color: black;
+            height: 400px;
+            color: aliceblue;
+            margin-top: 2px;
+
+        }
+
+        .box1 h1 {
+            padding-top: 150px;
+            margin-left: 300px;
+            font-size: 45px;
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+
+        .box1 h3 {
+            padding-top: 20px;
+            text-align: start;
+            margin-left: 300px;
+        }
+
+        .tv img {
+            margin-left: 1000px;
+            margin-top: -200px;
+            
+        }
+
+        .video {
+
+            margin-left: 450px;
+            padding-top: -300px;
+            align-items: end;
+            
+            margin-top: -110px;
+            border-radius: 10px;
+
+        }
+        .gtt{
+            margin-left: 200px;
+            padding-top: 30px;
+        
+        }
+       
+        .text2{
+            color: #fcfeff;
+            margin-left: 700px;
+            margin-top: -280px;
+            font-size: 23px;
+        }
+        .text2 p{
+            font-size: 25px;
+        }
+        .box2{
+            background-color: rgb(0, 0, 0);
+            height: 400px;
+            margin-top: 120px;
+
+        }
+        .text3{
+            color:white;
+            padding-top: 200px;
+            margin-left: 200px;
+        }
+        .text3 img{
+            margin-left: 800px;
+            margin-top: -200px;
+        }
+        .box3{
+            background-color: rgb(0, 0, 0);
+            height: 400px;
+            margin-top: 2px;  
+        }
+        .box3 img{
+            margin-left: 60px;
+        }
+        .box3 h1{
+            color: #fcfeff;
+            margin-left: 700px;
+            margin-top: -300px;
+            font-size: 50px;
+        }
+        .box3 p{
+            color: #fcfeff;
+            margin-left: 700px;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images\Netflix_Logo_PMS (2).png" height="80px">
+        </div>
+
+        <div class="nav">
+            <button class="Language"><select name="" id="">
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                </select></button>
+
+            <button class="signIn">SignIn</button>
+
+        </div>
+
+        <div class="heading">
+            <h1>
+                Unlimited movies, TV shows and more</h1>
+
+            <h3>Watch anywhere. Cancel anytime.</h3>
+
+            <p>
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+        </div>
+        <div class="getstart">
+            <input type="email" placeholder="Email address" class="email">
+            <button><b>Get Started ></b></button>
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="text1">
+            <h1>Enjoy on your TV</h1>
+            <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</h3>
+        </div>
+
+        <div class="tv">
+
+            <div class="video">
+                <video src="images\video-tv-in-0819.m4v" height="300px" class="video"></video>
+            </div>
+        </div>
+    </div>
+    <div class="box1">
+ <div class="gtt">
+    <img src="images\mobile-0819.jpg" height="270px">
+ </div>
+    </div>
+    <div class="text2">
+        <h1>Download your shows to <br>watch offline</h1>
+        <p>Save your favourites easily and always have <br> something to watch.</p>
+    </div>
+
+    <div class="box2">
+        <div class="text3">
+            <h1>Enjoy on your TV</h1>
+            <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</h3>
+            <img src="images\boxshot.png" height="300px" >
+        </div>
+    </div>
+
+   <div class="box3">
+<img src="images\AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png" height="400px">
+<h1>Create profiles for kids</h1>
+<p>Send children on adventures with their favourite <br> characters in a space made just for them—free with <br> your membership.</p>
+   </div>
+
+ 
+    
+</body>
+
+</html>
